@@ -1,0 +1,141 @@
+@import url(normalize.css);
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+body {
+  font: 18px/1.5, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+header {
+  background-color: #9cdaa4;
+}
+p {
+  margin: 0;
+}
+header nav h1 {
+  display: none;
+}
+header > div,
+#mentionLegale form {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+header div {
+  position: relative;
+}
+header h1 {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  width: 351px;
+  height: 120px;
+  padding: 0;
+  display: block;
+}
+header nav {
+  clear: both;
+}
+header #panier {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0px 10px 0px 0px;
+  width: 290px;
+  font-size: 14px;
+}
+header #panier #list,
+header #panier #connection {
+  width: 48.25%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  float: left;
+}
+header #panier #list {
+  height: 40px;
+  line-height: 40px;
+}
+header #panier #connection {
+  height: 38px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-top: 2px;
+}
+header #panier #total {
+  background-color: rgba(255, 255, 255, 0.8);
+  clear: both;
+  padding: 6px;
+  height: 58px;
+}
+header #panier #total p {
+  display: inline-block;
+  line-height: 58px;
+}
+header #panier #total #number {
+  font-size: 40px;
+}
+#mentionLegale {
+  background-color: #ffffff;
+  height: 50px;
+  line-height: 50px;
+}
+#mentionLegale h1,
+#mentionLegale p {
+  font-size: 12px;
+  display: inline;
+}
+#mentionLegale #search {
+  float: right;
+  width: 290px;
+  margin: 10px 0 0;
+  height: 50px;
+  position: relative;
+}
+#mentionLegale input {
+  display: block;
+  height: 22px;
+  left: -110px;
+  width: 175px;
+}
+#mentionLegale input + input {
+  border: solid 2px #9cdaa4;
+  width: 112px;
+  height: 30px;
+  position: relative;
+  top: -30px;
+  left: 179px;
+  -webkit-box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  color: #318a49;
+  padding: 1px 6px;
+  background: #c4e9c8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c4e9c8), color-stop(100%, #9ddaa4));
+  background: -moz-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+  background: -webkit-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+  background: -o-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+  background: -ms-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+  background: linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  #mentionLegale input + input {
+    height: 28px;
+    top: -28px;
+  }
+}
+#mentionLegale input + input:active {
+  -webkit-box-shadow: inset 0px -2px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: inset 0px -2px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px -2px 0px rgba(255, 255, 255, 0.3);
+  color: #318a49;
+  background: #9ddaa4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9ddaa4), color-stop(100%, #c4e9c8));
+  background: -moz-linear-gradient(top, #9ddaa4 0%, #c4e9c8 100%);
+  background: -webkit-linear-gradient(top, #9ddaa4 0%, #c4e9c8 100%);
+  background: -o-linear-gradient(top, #9ddaa4 0%, #c4e9c8 100%);
+  background: -ms-linear-gradient(top, #9ddaa4 0%, #c4e9c8 100%);
+  background: linear-gradient(top, #9ddaa4 0%, #c4e9c8 100%);
+}

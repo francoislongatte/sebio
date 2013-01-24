@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link href="headsupgrid/hugrid.css" type="text/css" rel="stylesheet">
+    <script src="headsupgrid/jquery-1.6.2.min.js" type="text/javascript">
+</script>
+    <script src="headsupgrid/hugrid.js" type="text/javascript">
+</script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+            pageUnits = 'px';
+            colUnits = 'px';
+            pagewidth = 918;
+            //pagewidth = 950;
+            columns = 16;
+            columnwidth = 48;
+            //columnwidth = 50;
+            gutterwidth = 10;
+            pagetopmargin = 0;
+            rowheight = 10;
+            gridonload = 'off';
+            makehugrid();
+            setgridonload();
+        });
+    </script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <section id="mentionLegale">
+	        <form>
+	            <h1>SeBIO S.P.R.L.</h1>
+	
+	            <p>- 1190 Bruxelles, au 101A rue du Monténégro - contact@sebio.be</p>	
+	            <fieldset id="search">
+		            <label ><span id="iconSearch"></span> <input type="search"> </label>
+		            <input class="submitSearch" type="submit" value="Recherche">
+	            </fieldset>
+	        </form>
+	    </section>
+	    <header>
+	        <div>
+		        <h1><a href="index.html"><img src="images/logo.svg" alt="Sebio"></a></h1>
+		        <div id="panier">
+		            <div id="list">
+		                <p><span class="icon-heart"></span>Liste(0)<span class="icon-down-open-big"></span></p>
+		                <div id="boxList">
+			                <ul>
+			                	<li>Déodorant sans parfum - spray<span>delete</span><span>6,80€</span></li>
+			                </ul>
+			                <footer>
+				                <a href="#">Connection requise pour sauver votre liste</a>
+			                </footer>
+		                </div>
+		            </div>
+		
+		            <div id="connection">
+		                <p>connection</p>
+		                <p>inscription</p>
+		                <form id="boxConnection">
+			            	<fieldset>
+				            	<label>Username</label>
+				            	<input class="check" type="text">
+				            	<label>Password
+				            		<a tabindex="5" class="rLink" href="#">Forget your password?</a>
+				            	</label>
+				            	<input class="check" type="password" >
+				            	<input type="submit" value="connection" class="btnLogin">
+			            	</fieldset>
+			            	<footer>
+				            	<a href="inscription.html">Ou créer un compte...</a>
+			            	</footer>
+		                </form>
+		            </div>
+		            
+		            <div id="total">
+		                <a href="panier.html">
+			                <span>3</span>
+			
+			                <span>Elements dans votre panier</span>
+			
+			                <span>Total :  	25,47 €</span>
+		                </a>
+		            </div>
+		        </div>
+		        <nav>
+		            <h1>Navigation principal</h1>
+		            <ul>
+	           			<li class="linkLi">
+	           				<h2><a href="categorie.html">Bons Plans</a></h2>
+	           				<div class="openMega">
+						         <h3>Bons Plans</h3>
+						         <div>
+							         <ul>
+										<li>
+											<a href="#">Nouveautés</a>
+										</li>
+										<li>
+											<a href="#">Liquidation</a>
+										</li>
+										<li>
+											<a href="#">Chèques cadeau</a>
+										</li>
+							         </ul>
+							         <img src="http://lorempixel.com/150/200" alt="" />
+						         </div>
+					        </div>
+	           			</li><!--
+	           		--><li class="linkLi">
+	           				<h2><a href="categorie.html">Enfants & Futures mamans</a></h2>
+	           				<div class="openMega">
+						         <h3>Enfants & Futures mamans</h3>
+						         <div>
+							         <ul>
+										<li>
+											<a href="#">Grossesse et allaitement</a>
+										</li>
+										<li>
+											<a href="#">Listes de naissance</a>
+										</li>
+										<li>
+											<a href="#">Bébé et enfant</a>
+										</li>
+										<li>
+											<a href="#">Couches</a>
+										</li>
+										
+							        </ul>
+									<ul>
+										<li>
+											<a href="#">Alimentation bio pour bébé</a>
+										</li>
+										<li>
+											<a href="#">Jeux et jouets</a>
+										</li>
+										<li>
+											<a href="#">Location de porte-bébés</a>
+										</li>
+							         </ul>
+							         <img src="http://lorempixel.com/150/200" alt="" />
+						         </div>
+					        </div>
+	           			</li><!--
+	           		--><li class="linkLi">
+	           				<h2><a href="categorie.html">Santé & Nature</a></h2>
+	           				<div class="openMega">
+						         <h3>Santé & Nature</h3>
+						         <div>
+							         <ul>
+										<li>
+											<a href="#">Santé et bien-etre</a>
+										</li>
+										<li>
+											<a href="#">Hygiène et soin</a>
+										</li>
+										<li>
+											<a href="#">Aromathérapie</a>
+										</li>
+										<li>
+											<a href="#">Nos ateliers nature</a>
+										</li>
+							         </ul>
+							         <ul>
+							         	<li>
+								         	<a href="#">Fleurs de Bach</a>
+							         	</li>
+							         </ul>
+							         <img src="http://lorempixel.com/150/200" alt="" />
+						         </div>
+					        </div>
+	           			</li><!--
+	           		--><li class="linkLi">
+	           				<h2><a href="categorie.html">Mode</a></h2>
+	           				<div class="openMega">
+						         <h3>Mode</h3>
+						         <div>
+							         <ul>
+										<li>
+											<a href="#">Vétements</a>
+										</li>
+										<li>
+											<a href="#">Tissus</a>
+										</li>
+										<li>
+											<a href="#">La queue du chat hiver 12/13</a>
+										</li>
+							         </ul>
+							         <img src="http://lorempixel.com/150/200" alt="" />
+						         </div>
+					        </div>
+	           			</li><!--
+	           		--><li class="linkLi">
+	           				<h2><a href="categorie.html">Maison & Loisirs</a></h2>
+	           				<div class="openMega">
+						         <h3>Maison & Loisirs</h3>
+						         <div>
+							         <ul>
+										<li>
+											<a href="#">Papeterie</a>
+										</li>
+										<li>
+											<a href="#">Livres</a>
+										</li>
+										<li>
+											<a href="#">La maison au naturel</a>
+										</li>
+										<li>
+											<a href="#">Produits d'entretien</a>
+										</li>
+							         </ul>
+							         <img src="http://lorempixel.com/150/200" alt="" />
+						         </div>
+					        </div>
+	           			</li>
+		            </ul>
+		        </nav>
+	        </div>
+	    </header>
+	    <section class="categorie">
+	        <div id="colLeft">
+		        <div class="block advantages">
+					<p class="title">Vos avantages</p>
+					<ul>
+						<li>
+							<p>Inscrivez-vous et recevez 5% de remise sur votre 1ère commande&nbsp;!</p>
+						</li>
+						<li>
+							Frais d'envoi offert à partir de 60€ de commande&nbsp;!
+						</li>
+						<li>
+							<p>1 seul article acheté&nbsp;?</p>
+							<p>1€ de frais d'envoi&nbsp;! </p>
+						</li>
+					</ul>
+				 </div>
+				 <div class="block information">
+				 	<p class="title">Colis expédié le jour même&nbsp;!</p>
+				 	<ul>
+				 		<li>
+							<p>Envoi de Lille tous les jours (France + UE)</p>
+							<p>Envoi de Bruxelles tous les jours (Benelux)</p>
+							<p><a href="#">En savoir plus ...</a></p>
+						</li>
+						<p class="title">L'entrepôt</p>
+						<li >
+							
+							<p>Pour retirer votre commande uniquement</p>
+							<p><a href="#">Détails...</a></p>
+						</li>
+						<li>
+							<p><a href="#">Infos et conseils</a></p>
+							<p><a href="#">Vos garanties</a></p>
+							<p><a href="#">Vos avantages</a></p>
+							<p><a href="#">Listes de naissance</a></p>
+						</li>
+				 	</ul>
+				 </div>
+	        </div>
+	        <div id="colRight">
+		        <div class="filAriane"><a href="index.html">Accueil&nbsp;</a>><a href="categorie.html">&nbsp;Enfants & Futures mamans&nbsp;</a>><a href="sousCategorie.html">&nbsp;Grossesse et allaitement</a>&nbsp;>&nbsp;Stevia Poudreur 100% PURE</div>
+		        
+		        <h3>Stevia Poudreur 100% PURE</h3>
+		        <div id="photoContainer">
+			       <img src="images/essai4.jpg" alt="essai4" width="280" height="280">
+		        </div>
+		        <div id="productDescription">
+				       <h1>Stevia Poudreur 100% PURE</h1>
+				       <form method="get" action="#">
+				        	<p>Article en stock</p>
+				        	<p>Expédition possible sous 1 jours</p>
+							<p>Prix&nbsp;:&nbsp;<span class="price" id="reloadPrice">8,95&nbsp;€</span></p>
+							<div class="addToCart">
+								<h2>Ajoutez cette article</h2>
+								<div class="quantityBlock">
+								    <input type="text" value="1" size="4">
+								    <button>+</button>
+							    <button>−</button>
+							    </div>
+							<button class="button btnCart" type="submit">Ajouter au panier</button>
+						</div>
+					</form>
+		        </div>
+		        <span class="clearfix"></span>
+		        <div class="blockDescription">
+					<p class="titleDescription">description<p>
+					<p><strong>Stevia Poudreur 100% PURE (Purasana) - 15g</strong></p>
+					<p>La stévia est une plante originaire d'Amérique du Sud, traditionnelement utilisée pour ses vertus sucrantes. Ses feuilles renferment des molécules naturellement sucrantes et sans calories. Le principal composant est le Rebaudioside A, au pouvoir sucrant de 300 fois supérieur au sucre classique. Purasana extrait de stévia - glycosides de stéviol est obtenu selon un procédé d'extraction doux des feuilles de stévia. Les stéviols glycosides sont composés à 60 % de rebaudioside A ayant une pureté de 98 % (très important lorsque vous comparez les prix !)</p>
+				</div>
+				<h2>Dans la même catégorie…</h2>
+		        <ul>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		        </ul>
+		        <h2>Vous avez déjà consulté…</h2>
+		        <ul>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		            <a href="ficheProduit.html">
+			            <li>
+			                <img src="images/essai3.png" alt="essai" width="110" height="110">
+		
+			
+			                <p>Coton hydrophile prédécoupé</p>
+			
+			                <p class="price">
+			                    2,74 €
+			                </p>
+			                <span class="icon-basket-alt"><a href="#"></a></span>
+			            </li>
+		            </a>
+		        </ul>
+	        </div>
+	  </section>
+	    <footer>
+	        <div>
+	            <h2>A propos de Sebio</h2>
+	
+	            <p><a href="#">qui sommes-nous ?</a></p>
+	
+	            <p><a href="#">articles en promotion</a></p>
+	
+	            <p><a href="#">annonce légale</a></p>
+	
+	            <p><a href="#">conditions générales de vente</a></p>
+	
+	            <p><a href="#">contact</a></p>
+	        </div>
+	
+	        <div>
+	            <h2>Service clients</h2>
+	
+	            <p><a href="#">infos et Conseils</a></p>
+	
+	            <p><a href="#">vos garanties</a></p>
+	
+	            <p><a href="#">vos avantages</a></p>
+	
+	            <p><a href="#">listes de naissance</a></p>
+	
+	            <h2>Formations</h2>
+	
+	            <p><a href="#">cours d'aromathérapie</a></p>
+	
+	            <p><a href="#">conseils en fleurs de bach</a></p>
+	        </div>
+	
+	        <div>
+	        <h2>Paiement 100% Sécurisé</h2><img src="images/payement.png" alt="payement" width="236" height="296"></div>
+	    </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

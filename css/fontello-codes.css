@@ -1,0 +1,6 @@
+
+.icon-heart:before { content: '\2665'; } /* '♥' */
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-down-open-big:before { content: '\e764'; } /* '' */
+.icon-up-open-big:before { content: '\e767'; } /* '' */
+.icon-basket-alt:before { content: '\e7ae'; } /* '' */

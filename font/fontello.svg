@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20100429 at Sun Jan 20 13:47:51 2013
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="364" >
+  <font-face 
+    font-family="fontello"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="15 -79 1015 779"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+2665-E7AE"
+  />
+<missing-glyph 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="heart" unicode="&#x2665;" horiz-adv-x="1030" 
+d="M15 517q0 123 71.5 192.5t195.5 69.5q88 0 191 -83q20 -16 42 -38q40 40 96 76q68 45 137 45q124 0 195.5 -69.5t71.5 -192.5t-128 -251l-347 -335q-10 -10 -25 -10t-25 10l-348 336q-40 33 -84 106q-43 73 -43 144z" />
+    <glyph glyph-name="uni2715" unicode="&#x2715;" horiz-adv-x="786" 
+d="M18 150l224 225l-224 225l150 150l226 -225l224 225l150 -150l-226 -225l226 -225l-150 -150l-224 225l-226 -225z" />
+    <glyph glyph-name="uniE764" unicode="&#xe764;" horiz-adv-x="896" 
+d="M78 570l370 -356l372 356q22 26 48 0q26 -22 0 -48l-396 -392q-22 -22 -48 0l-396 392q-26 26 0 48q24 24 50 0z" />
+    <glyph glyph-name="uniE767" unicode="&#xe767;" horiz-adv-x="894" 
+d="M819 130l-372 358l-370 -358q-26 -23 -50 0q-24 24 0 50l396 390q25 26 48 0l396 -390q24 -26 0 -50q-25 -22 -48 0z" />
+    <glyph glyph-name="uniE7AE" unicode="&#xe7ae;" horiz-adv-x="843" 
+d="M294 -25q-35 0 -59.5 24.5t-24.5 59.5t24.5 59t59.5 24t59.5 -24t24.5 -59t-24.5 -59.5t-59.5 -24.5zM699 -25q-34 0 -58.5 24.5t-24.5 59.5t24.5 59t58.5 24q35 0 58.5 -24t24.5 -59q0 -35 -24 -59.5t-59 -24.5zM776 584q22 -2 35.5 -16t13.5 -34v-282q0 -21 -15 -36
+t-36 -15h-478q-17 0 -31.5 12.5t-16.5 30.5l-89 317q-15 58 -41 65q-10 3 -41.5 4t-44.5 11t-13 40q0 19 9.5 29.5t19.5 11.5l10 2l2 1h6h10q124 0 159 -103zM735 498l-114 8v-90h114v82zM581 416v93l-125 9v-102h125zM456 388v-97h125v97h-125zM256 530l38 -114h122v104z
+M334 291h82v97h-112zM621 291h114v97h-114v-97z" />
+  </font>
+</defs></svg>
