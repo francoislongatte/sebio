@@ -9,7 +9,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
+ 
 html,
 button,
 input,
@@ -258,7 +258,7 @@ footer{
 }
 .filAriane{
 	font-size: 0.7em;
-	margin:10px;
+	margin:10px 0;
 }
 .paginationContainer{
 	font-size: 0.95em;
@@ -278,6 +278,124 @@ footer{
 .pagination.bottom{
 	right:10px;
 	padding:10px;
+}
+.admin{
+	
+	li{
+		list-style: none;
+		
+	}
+}
+.compte{
+	margin :0 auto;	
+	padding: 0 16px;
+    width: 918px;
+	background-color: #fff;
+	-moz-box-shadow: 0px 4px 5px 0px #E5E5E5;
+	-webkit-box-shadow: 0px 4px 5px 0px #E5E5E5;
+	-o-box-shadow: 0px 4px 5px 0px #E5E5E5;
+	box-shadow: 0px 4px 5px 0px #E5E5E5;
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+	h3{
+		font-weight: 400;
+		font-size: 1em;
+	}
+	.menuLeft {
+		margin-bottom: 20px;
+		li{
+			font-size: 0.8125em;
+			background-color: #9CDAA4;
+			width: 223px;
+			position: relative;
+			border-top:1px solid #DDD;
+			border-bottom: 1px solid #414141;
+		}
+		li:after{
+			border-bottom: 29px solid transparent;
+			border-left: 10px solid #9CDAA4;
+			border-top: 29px solid transparent;
+			content: "";
+			height: 0;
+			padding-left: 2px;
+			position: absolute;
+			width: 0;
+			right: -12px;
+			top: 0;
+			
+		}
+		li:first-child{
+			background-color: rgba(255,255,255,0);
+			border:none;
+			font-size: 1.5em;
+			padding:10px 0;
+		}
+		li:first-child:after{
+			content:none;
+		}
+		.actual:after{
+			right: 30px;
+		}
+		.actual{
+			width: 281px;
+		}
+		a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 20px;
+			
+			-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+			color:black;
+		}
+	}
+	.divCommande{
+		background-color: #E6E7E8;
+		font-size: 0.8em;
+    	margin: 10px 0;
+    	padding: 5px 10px;
+    	overflow: hidden;
+    	position: relative;
+    	span{
+	    	display: block;
+    	}
+    	.details{
+	    	position: absolute;
+	    	right: 10px;
+	    	top: 5px;
+    	}
+	}
+	#colLeft{
+		width: 30.5%;
+		float: left;
+		padding-top: 10px;
+		a{
+			color:black;
+		}
+		.current,{
+			background-color: #E87E2A;
+		}
+		.current:after{
+			border-left: 10px solid #E87E2A;
+		}
+	}
+	#colRight{
+			border-left:1px solid #c3c3c3;
+			float: right;
+			padding: 10px 2px 0 9px;
+			width: 68.19%;
+		h2{
+			font-size: 1rem;
+			font-weight: 400;
+			margin:0;
+		}
+		#divEspacePersonnel span{
+			font-size: 0.8em;
+		}
+	}
 }
 .categorie{
 	margin :0 auto;	
@@ -417,8 +535,12 @@ footer{
 				margin:0;
 			}
 			.quantityBlock{
-				width: 25%;
+				width: 40%;
 				float:left;
+				padding:10px;
+				button{
+					padding:4px;
+				}
 			}
 			button{
 				float:right;
@@ -501,6 +623,25 @@ footer{
 	z-index: 1;
 	position: relative;
 	padding-bottom: 20px;
+	.valid{
+		border : solid 2px #9cdaa4;
+		width: 100%;
+		height: 30px;
+		margin-top: 10px;
+		-webkit-box-shadow : inset 0px 2px 0px rgba(255,255,255,0.3);
+		-moz-box-shadow : inset 0px 2px 0px rgba(255,255,255,0.3);
+		box-shadow : inset 0px 2px 0px rgba(255,255,255,0.3);
+		font-size : 16px;
+		color : #318a49;
+		padding : 1px 6px;
+		background : #c4e9c8;
+		background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c4e9c8), color-stop(100%,#9ddaa4));
+		background : -moz-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+		background : -webkit-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+		background : -o-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+		background : -ms-linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+		background : linear-gradient(top, #c4e9c8 0%, #9ddaa4 100%);
+	}
 	p{
 		padding:5px 0;
 	}
@@ -990,7 +1131,8 @@ header{
 			.linkLi:last-child{
 				border-right: 0;
 			}
-			.linkLi:hover{
+			.linkLi:active
+			.linkLi:hover,.linkLi:active{
 				background-color: #fff;
 				background-image: -webkit-linear-gradient(bottom, #9cdaa4, #f4f4f5);
 				background-image: -moz-linear-gradient(bottom, #9cdaa4, #f4f4f5);
@@ -999,7 +1141,7 @@ header{
 				background-image: linear-gradient(to top, #9cdaa4, #f4f4f5);
 				z-index: 999;
 			}
-			li:hover .openMega{
+			li:hover .openMega,.linkLi:active .openMega{
 					display: block;
 				}
 			.openMega{
@@ -1060,7 +1202,7 @@ header{
     	top:0;
     	right:0;
     	margin:0px 10px 0px 0px;
-    	width: 29.89690722%;
+    	width: 290px;
     	font-size: 14px;
     	z-index: 9999;
 	    #list,#connection{
@@ -1338,7 +1480,406 @@ header{
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (max-width: 959px){
+	header>div,#mentionLegale form,footer,.content,.panier,.categorie,.recapitulatif,.compte {
+		max-width: 950px;
+		width: 80%;
+		min-width: 730px;
+		-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+	}
+	header>div{
+		margin:0 auto;
+		padding: 0;
+	}
+	#mentionLegale form{
+		padding:0px;
+		margin:0 auto;
+	}
+	.recapitulatif li > span {
+		width: 48.75%;
+	}
+	.categorie #colRight{
+		width: 62.19%;
+		li{
+			margin:0;
+			margin-top: 10px;
+			width: 43.75%;
+		}
+		li:nth-child(3n+3){
+			margin:0;
+			margin-top: 10px;
+		}
+		li:nth-child(even){
+			margin-left:10px;
+		}
+	}
+	header #panier{
+		margin:0 auto;
+		padding: 0;
+	}
+	img{
+		max-width: 100%;
+	}
+	.compte #colRight {
+		width: 56.19%;
+	}
+	header{
+		nav{
+			.linkli{
+				line-height: normal;
+				width: none;
+			}
+		}
+	}
+	#panier #connection #boxConnection footer,header #panier #boxList footer{
+			-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+			width: 100%;
+			min-width: 10px;
+			
+	}
+	header nav .linkLi{
+		width: 19.78%;
+	}
+	#promocase p {
+	    font-size: 0.8em;
+	    width: 50%;
+	}
+	#promocase img {
+	    height: 80%;
+	    width: 50%;
+	}
+	#rightColTop, #rightColBottom {
+	    width: 40.15%;
+	}
+	.content li{
+		max-width: 146px;
+		width: 80%;
+		min-width: 100px;
+	}
+	.inscription ol  li {
+		width: 100%;
+		max-width: none;
+		min-width: none;
+	}
+	.pub #leftCol {
+	    max-width: 265px;
+	    min-width: 100px;
+	    width: 80%;
+	}
+	.pub #midCol {
+	    max-width: 165px;
+	    min-width: 100px;
+	    width: 80%;
+	}
+	.pub #rightCol {
+	    max-width: 185px;
+	    width: 80%;
+	    min-width: 100px;
+	}
+	.content li .price {
+	    width: 67%;
+	    font-size: 0.8em;
+	    padding:5px 0;
+	    padding: 3px 0;
+	}
+	.content li .price span {
+	    margin: 0;
+	}
+	.content li .price span {
+	    width: 45%;
+	}
+}
+@media only screen and (min-width: 768px){
+	
+}
+@media only screen and (max-width: 767px){
+	header>div,#mentionLegale form,footer,.content,.panier,.categorie,.recapitulatif,.compte {
+		max-width: 600px;
+		width: 80%;
+		min-width: 480px;
+		-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+	}
+	.optional{
+		display: none;
+	}
+	#rightColTop, #rightColBottom {
+		font-size: 0.8em;
+		line-height: 75px;
+	}
+	td{
+		font-size: 0.8em;
+		
+	}
+	.panier form fieldset .promo{
+		display: block;
+	}
+	.panier form fieldset:nth-child(3) select{
+		width: 80%;
+	}
+	.panier form fieldset + fieldset span{
+		position: static;
+	}
+	header nav {
+		height: 120px;
+	}
+	header nav .linkLi {
+	    height: 40px;
+	    width: 49.6%;
+	    display: block;
+	    float: left;
+	    border:none;
+	}
+	header nav .linkLi:hover .openMega{
+		display: none;
+	}
+	#mentionLegale p {
+	    display: none;
+	}
+	#promocase {
+		width: 100%;
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+	#promocase img {
+	    height: 70%;
+	    width: 35%;
+	}
+	#rightColTop, #rightColBottom {
+	    width: 49.1%;
+	    -moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+	.content li {
+		max-width: 44.50343693%;
+		margin: 2px 0;
+	}
+	.content li .price {
+		width: 78%;
+	}
+	.pub #leftCol {
+    	max-width: 287px;
+    }
+    .pub #rightCol {
+	    margin-left: 0;
+	    margin-top: 10px;
+	    max-width: 113%;
+	    min-width: 100px;
+	    width: 99%;
+	    -moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box;
+	}
+	.inscription label {
+		width: 145px;
+	}
+	header {
+	    height: 238px;
+	}
+	.categorie .menuLeft li {
+		width: 148px;
+	}
+	.categorie .menuLeft li:after{
+		content:none;
+		border: none;
+	}
+	.pagination{
+		position: relative;
+	}
+	.categorie #colRight form .search{
+		display: none;
+	}
+	.advantages, .information{
+		display: none;
+	}
+	.categorie #colRight li:nth-child(2n){
+		margin:10px 0;
+	}
+	.categorie #colRight li {
+		margin:10px 0;
+		width: 91.75%;
+	}
+	footer div {
+		float: none;
+		width: 100%;
+	}
+	.categorie #colRight {
+    	width: 100%;
+    	border: none;
+    	text-align: center;
+    }
+    .categorie #colLeft{
+	    display: none;
+    }
+    .categorie #colRight #photoContainer,.categorie #colRight #productDescription {
+	    width: 100%;
+    }
+}
+@media only screen and (min-width: 480px){
+	
+}
+@media only screen and (max-width: 480px){
+	header>div,#mentionLegale form,footer,.content,.panier,.categorie,.recapitulatif,.compte {
+		max-width: 480px;
+		width: 90%;
+		min-width: 130px;
+		-moz-box-sizing: border-box; 
+			-webkit-box-sizing: border-box; 
+			box-sizing: border-box;
+	}
+	td{
+		font-size: 0.8em;
+		img {
+		    display: none;
+		}
+	}
+	header nav .linkLi{
+		width: 100%;
+		
+	}
+	
+	header nav {
+	    height: 200px;
+	}
+	h2 {
+    	text-align: center;
+    }
+	#mentionLegale h1{
+		display: none;
+	}
+	header #panier {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	header h1 {
+		width: 100%;
+		}
+		
+	#promocase p {
+		font-size: 0.5em;
+		width: 46%;
+	}
+	#promocase img {
+	    height: 70%;
+	    width: 55%;
+	    margin-top: 40px;
+	}
+	#rightColTop, #rightColBottom {
+	    font-size: 0.6em;
+	    padding-top: 0;
+	}
+	footer div {
+		float:none;
+		width: 100%;
+	}
+	header{
+		height: 456px;
+	}
+	.content li {
+	    margin: 2px 0;
+	    max-width: 91%;
+	    width: 88%;
+	}
+	
+	header #panier {
+	    width: 100%;
+	}
+	header #panier {
+		position: inherit;
+	}
+	.pub #leftCol {
+    	width: 88%;
+    	font-size: 0.7em;
+    }
+    .pub #midCol {
+	    margin: 10px 0 0;
+	    max-width: 269px;
+	    min-width: 100px;
+	    width: 100%;
+	}
+	.pub #rightCol {
+		max-width: 291px;
+	}
+	
+	.inscription label {
+		margin:0 auto;
+		text-align: center;
+		display: block;
+		float:none;
+	}
+	.inscription .required:after{
+		float:none;
+	}
+	.inscription ol li {
+		text-align: center;
+	}
+	.inscription legend {
+	    text-align: center;
+	}
+	#mentionLegale #search{
+		width: 100%;
+	}
+	#mentionLegale .submitSearch{
+		   left: 50%;
+		   width: 50%;
+    }
+    header #panier #list:hover #boxList{
+	    display: none;
+    }
+    header #panier #connection{
+	    margin-left: 9px;
+    }
+    header #panier #connection:hover,header #panier #list:hover{
+	    	height: 40px;
+	    	
+    }
 
+    header #panier #connection:hover #boxConnection{
+	   display: none;
+    }
+	#mentionLegale input{
+		width: 50%;
+	}
+	.categorie .menuLeft li {
+		width: 148px;
+	}
+	.categorie .menuLeft li:after{
+		content:none;
+		border: none;
+	}
+	.categorie #colLeft {
+		float: none;
+		width: 100%;
+	}
+	.categorie .menuLeft li {
+		width: 100%;
+	}
+	.categorie #colRight {
+		width: 100%;
+		border: none;
+	}
+	.categorie #colRight li {
+		width: 90.75%;
+	}
+}
+@media only screen and (max-width: 320px){
+	header #panier #connection {
+		width: 47%;
+	}
+	header #panier #list{
+		width: 47%;
+	}
+	header {
+	    height: 376px;
+	}
+}
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
